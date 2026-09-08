@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #12000f;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* ============================= */
+/* HERO SECTION */
+/* ============================= */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(
+        circle at center,
+        #4a0939,
+        #170011 65%
+    );
+    padding: 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+    animation: fadeUp 1.5s ease;
+}
+
+.small-text {
+    font-size: 14px;
+    letter-spacing: 4px;
+    color: #ffb6df;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 100px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    text-shadow: 0 0 20px rgba(255, 50, 160, 0.5);
+}
+
+.hero h1 span {
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffb6df;
+    margin-top: 20px;
+}
+
+.date {
+    color: #d8a4c6;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+#startButton {
+    border: none;
+    padding: 16px 35px;
+    border-radius: 50px;
+    background: linear-gradient(
+        135deg,
+        #ff3f92,
+        #b90066
+    );
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 10px 30px rgba(255, 0, 120, 0.3);
+}
+
+#startButton:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(255, 0, 120, 0.5);
+}
+
+/* ============================= */
+/* GENERAL SECTIONS */
+/* ============================= */
+
+.section {
+    padding: 120px 20px;
+}
+
+.section-container {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.section-small {
+    font-size: 13px;
+    letter-spacing: 4px;
+    color: #ff78b7;
+    margin-bottom: 15px;
+}
+
+.section h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: 65px;
+    margin-bottom: 30px;
+}
+
+.description {
+    max-width: 800px;
+    margin: 15px auto;
+    color: #d7c3d0;
+    line-height: 1.9;
+}
+
+/* ============================= */
+/* RELATIONSHIP TIMER */
+/* ============================= */
+
+.timer-section {
+    background: linear-gradient(
+        180deg,
+        #12000f,
+        #27001e
+    );
+}
+
+.timer-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.time-box {
+    width: 150px;
+    padding: 30px 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.time-box:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 64, 160, 0.1);
+}
+
+.time-box span {
+    display: block;
+    font-size: 45px;
+    font-weight: 700;
+    color: #ff75b8;
+}
+
+.time-box p {
+    margin-top: 10px;
+    color: #c7a7bb;
+}
+
+/* ============================= */
+/* LOVE LETTER */
+/* ============================= */
+
+.letter {
+    background: #170011;
+}
+
+.letter-card {
+    max-width: 750px;
+    margin: 50px auto 0;
+    text-align: left;
+    padding: 50px;
+    background: linear-gradient(
+        145deg,
+        #3a092c,
+        #1f0017
+    );
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.letter-card p {
+    color: #ead9e4;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+.signature {
+    font-family: "Dancing Script", cursive;
+    font-size: 35px;
+    color: #ff7dbd;
+}
+
+/* ============================= */
+/* GALLERY (PHOTOS & VIDEOS) */
+/* ============================= */
+
+.gallery {
+    background: radial-gradient(
+        circle at top,
+        #320021,
+        #12000f 70%
+    );
+}
+
+.gallery-text {
+    color: #c9aaba;
+    margin-bottom: 50px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.photo-card {
+    height: 320px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #2b1024;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.4s;
+}
+
+.photo-card:hover {
+    transform: translateY(-10px) rotate(2deg);
+    box-shadow: 0 20px 50px rgba(255, 0, 120, 0.25);
+}
+
+.photo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    display: block;
+}
+
+.photo-card:hover img {
+    transform: scale(1.1);
+}
+
+.video-grid {
+    margin-top: 10px;
+}
+
+.video-card {
+    height: 360px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #2b1024;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.4s;
+    position: relative;
+}
+
+.video-card:hover {
+    transform: translateY(-10px) rotate(-1.5deg);
+    box-shadow: 0 20px 50px rgba(255, 0, 120, 0.3);
+}
+
+.video-card video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ============================= */
+/* 100 REASONS */
+/* ============================= */
+
+.reasons {
+    background: #180011;
+}
+
+.reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.reason-card {
+    padding: 25px 20px;
+    text-align: left;
+    background: linear-gradient(
+        145deg,
+        rgba(255, 255, 255, 0.07),
+        rgba(255, 255, 255, 0.02)
+    );
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.reason-card:hover {
+    transform: scale(1.05);
+    background: linear-gradient(
+        145deg,
+        rgba(255, 64, 160, 0.2),
+        rgba(255, 255, 255, 0.05)
+    );
+}
+
+.reason-number {
+    display: block;
+    font-size: 12px;
+    color: #ff75b8;
+    margin-bottom: 10px;
+}
+
+.reason-card p {
+    color: #eadbe5;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* ============================= */
+/* ENDING SECTION */
+/* ============================= */
+
+.ending {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: radial-gradient(
+        circle,
+        #4a0939,
+        #12000f 70%
+    );
+}
+
+.ending p {
+    color: #dec6d4;
+    margin: 15px 0;
+}
+
+.big-heart {
+    font-size: 100px;
+    margin: 30px 0;
+    animation: heartbeat 1.5s infinite;
+}
+
+.forever {
+    font-family: "Dancing Script", cursive;
+    font-size: 35px;
+    color: #ff8ac6;
+}
+
+/* ============================= */
+/* FLOATING MUSIC BUTTON */
+/* ============================= */
+
+.music-button {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    background: #ff3f92;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(255, 0, 120, 0.4);
+    z-index: 100;
+}
+
+/* ============================= */
+/* FLOATING HEARTS EFFECT */
+/* ============================= */
+
+.heart {
+    position: fixed;
+    bottom: -30px;
+    color: #ff4fa0;
+    animation: floating linear forwards;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* ============================= */
+/* ANIMATIONS */
+/* ============================= */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes floating {
+    from {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.7;
+    }
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* ============================= */
+/* RESPONSIVE DESIGN (MOBILE) */
+/* ============================= */
+
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 65px;
+    }
+
+    .hero h1 span {
+        font-size: 18px;
+    }
+
+    .section h2 {
+        font-size: 48px;
+    }
+
+    .letter-card {
+        padding: 30px 25px;
+    }
+
+    .time-box {
+        width: 120px;
+    }
+
+    .time-box span {
+        font-size: 35px;
+    }
+}
